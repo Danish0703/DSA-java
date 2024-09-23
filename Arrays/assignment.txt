@@ -1,0 +1,48 @@
+Certainly! Here's a brief explanation of the main logic behind each question:
+
+### Question 1: Check if the array contains any duplicates
+**Main Logic:** 
+- **Sorting:** First, sort the array.
+- **Consecutive Check:** Then, iterate through the sorted array and check if any consecutive elements are the same. If they are, return [`true`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2Fhamid%2FOneDrive%2FDocuments%2FGitHub%2FDSA-java%2FArrays%2Fassignment.java%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A11%2C%22character%22%3A23%7D%7D%5D%2C%22f4c2994a-6b4f-4506-9894-606e827a2c44%22%5D "Go to definition") indicating duplicates exist.
+**Must Remember:**
+- Sorting the array changes the original order.
+- Consecutive elements in a sorted array are easier to compare for duplicates.
+
+### Question 2: Search in Rotated Sorted Array
+**Main Logic:**
+- **Binary Search:** Use a modified binary search to find the target in a rotated sorted array.
+- **Determine Sorted Half:** In each iteration, determine which half of the array is sorted.
+- **Adjust Search Range:** Based on the sorted half, adjust the search range to narrow down the target's location.
+**Must Remember:**
+- A rotated sorted array has two sorted subarrays.
+- Binary search can be adapted to handle the rotation by checking which half is sorted.
+
+### Question 3: Best Time to Buy and Sell Stock
+**Main Logic:**
+- **Track Minimum Price:** Iterate through the prices while keeping track of the minimum price seen so far.
+- **Calculate Maximum Profit:** For each price, calculate the potential profit if sold at that price and update the maximum profit accordingly.
+**Must Remember:**
+- The goal is to maximize profit by buying at the lowest price and selling at the highest price after the buy.
+- Only one transaction is allowed (one buy and one sell).
+
+### Question 4: Trapping Rain Water
+**Main Logic:**
+- **Two Pointers:** Use two pointers starting from the left and right ends of the array.
+- **Track Maximum Heights:** Track the maximum heights from both ends.
+- **Calculate Trapped Water:** Move the pointers inward, and for each position, calculate the trapped water based on the minimum of the maximum heights.
+**Must Remember:**
+- Water trapped at a position is determined by the minimum of the maximum heights from both sides.
+- Two-pointer technique helps in reducing the time complexity.
+
+### Question 5: 3Sum
+**Main Logic:**
+- **Sorting:** First, sort the array.
+- **Three Pointers:** Use three pointers: one fixed and two (left and right) to find triplets that sum to zero.
+- **Avoid Duplicates:** Skip duplicate elements to ensure unique triplets.
+- **Adjust Pointers:** Adjust the left and right pointers based on the sum of the triplet.
+**Must Remember:**
+- Sorting the array simplifies finding triplets that sum to zero.
+- Avoiding duplicates is crucial for ensuring unique triplets.
+- Adjusting pointers helps in efficiently finding the required triplets.
+
+These explanations provide a high-level overview of the logic used in each function.
