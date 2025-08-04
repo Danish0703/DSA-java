@@ -3,7 +3,7 @@ public class rotate{
     public static void rotateArray(int arr[],int k){
 
         int n = arr.length;
-        k = k % n; // Handle cases where k is greater than n
+        k = k % n; 
         reverse(arr, 0, n - 1); // Reverse the entire array
         reverse(arr, 0, k - 1); // Reverse the first k elements
         reverse(arr, k, n - 1); // Reverse the remaining elements
@@ -29,5 +29,5 @@ public class rotate{
         sc.close();
     
    }
-    `
+    
 }
