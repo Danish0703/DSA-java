@@ -1,5 +1,3 @@
-
-
 public class remdup {
 
     public static int removeDuplicates(int arr[]) {
@@ -24,6 +22,8 @@ public class remdup {
         for (int i = 0; i < rem; i++) {
             System.out.print(arr[i] + " ");
         }
+
+        
 
     }
 }
