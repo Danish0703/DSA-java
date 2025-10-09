@@ -11,6 +11,18 @@ public class firstoccurence {
         return firstOcc(arr, key, i + 1);
     }
 
+    public static int lastOcc(int arr[], int key, int i) {
+        int isfound = lastOcc(arr, key, i + 1);
+
+        if (i == arr.length) {
+            return -1;
+        }
+        if (arr[i] == key) {
+            return i;
+        }
+        return firstOcc(arr, key, i + 1);
+    }
+
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 2, 5};
         System.out.println(firstOcc(arr, 2, 0));

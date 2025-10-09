@@ -19,7 +19,7 @@ public class substringwithsse {
     public static void main(String[] args) {
         String str = "abcab";
         long result = checkSubstring(str, 0, 0);
-        System.out.println("Number of palindromic substrings: " + result);
+        System.out.println("Number of substrings with same start and end: " + result);
     }
 
 }
